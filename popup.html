@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>X Feed Viewer</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h2>X Feed Viewer</h2>
+
+  <!-- Section: Get My Cookies -->
+  <button id="getMyCookies">Get My Cookies</button>
+  <p style="font-size:12px; color:#666;">
+    Copies your x.com cookies (name=value pairs) to clipboard. Useful if you want to share your own session.
+  </p>
+  <textarea id="myCookieOutput" readonly placeholder="Your cookie string will appear here..." style="display:none; margin-top:5px;"></textarea>
+
+  <hr/>
+
+  <!-- Section: Friend profile inputs -->
+  <input id="friendNameInput" type="text" placeholder="Friend's display name" />
+  <textarea id="cookieInput" placeholder="Paste friend's cookie string here" ></textarea>
+  <button id="saveProfile">Save Profile</button>
+  <button id="loadFriendFeed">Load Friend's Feed</button>
+
+  <hr/>
+
+  <!-- Section: Saved Profiles -->
+  <h3>Saved Profiles</h3>
+  <ul id="profileList"></ul>
+
+  <hr/>
+
+  <!-- Section: Restore -->
+  <button id="restoreFeed">Restore My Feed</button>
+
+  <script src="popup.js"></script>
+</body>
+</html>

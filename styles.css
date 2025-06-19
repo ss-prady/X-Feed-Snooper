@@ -1,0 +1,45 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  width: 300px;
+}
+input, textarea, button {
+  width: 100%;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+textarea {
+  height: 60px;
+}
+#profileList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 150px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+#profileList li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+#profileList li:last-child {
+  border-bottom: none;
+}
+.profile-name {
+  flex: 1;
+  margin-right: 5px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.profile-buttons button {
+  margin-left: 2px;
+}
+#myCookieOutput {
+  height: 80px;
+}
